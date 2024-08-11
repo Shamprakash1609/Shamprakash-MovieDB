@@ -1,0 +1,373 @@
+/* Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header Bar */
+.header {
+    background: #000; 
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='31.94' height='28.5' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 0%, 1)'/><path d='m7.97 2.5-8 4.64-8-4.64m16-4.5v33m-8-33v9.08m24 9.67-8 4.64-8-4.64m16-9.72-8 4.64v9.66m-8-14.3 8 4.64m24-9.17-8 4.64-8-4.64m0-4.5v33m8-33v9.08m-24 14.2-8 4.64V31m-8-9.72 8 4.64m40-4.64-8 4.64V31m-8-9.72 8 4.64'  stroke-linecap='square' stroke-width='1' stroke='hsla(54, 100%, 62%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");    
+    color: #fff; 
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.header-container {
+    background-color: red; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.circular-logo {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+
+.header-container h1 {
+    font-weight: bold;
+    font-family: serif;
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header-link {
+    margin: 0px 50px 0px 0px;
+}
+
+.header-link a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #FFD700; /* Yellow color for the link */
+    transition: color ease-in-out 0.5s;
+}
+
+.header-link a:hover {
+    color: #FFA500; /* Slightly darker yellow on hover */
+}
+
+/* Search Bar */
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px 0 0 8px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-box input:focus {
+    border-color: #D32F2F; /* Dark red */
+}
+
+.search-box button {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background-color: #D32F2F; /* Dark red */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #C62828; /* Slightly darker red on hover */
+}
+
+/* Main Container */
+    /* .main {
+        background-color: #f8dfa8;
+        padding: 40px;
+        min-height: 100vh;
+    }  */
+
+    .main {
+        background-image: url('./img/MainB.png'); /* Replace with the actual path to your image */
+        background: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)), url('./img/MainB.png') no-repeat center center fixed;
+        background-size: cover; /* Ensures the image covers the entire background */
+        background-position: center; /* Centers the background image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        padding: 40px;
+        min-height: 100vh;
+    }
+
+
+/* Movie Container */
+.movie-container {
+    width: 80%;
+    background-color: rgb(255, 199, 44);
+    padding: 20px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    box-shadow: 1px 2px #a1a1a1;
+}
+
+.movie-poster {
+    width: 50%;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.movie-details {
+    width: 100%;
+    padding: 0px 10px 0px 20px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.details-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dh-ls {
+    width: 87%;
+}
+
+.dh-rs {
+    text-align: right;
+    width: 10%;
+    padding: 5px 0px 0px 0px;
+}
+
+.details-header h1 {
+    padding-bottom: 0px;
+}
+
+.italics-text {
+    font-size: 16px;
+    color: green;
+}
+
+.details-ul {
+    list-style-type: none;
+    padding-left: 0px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Favourite Items Container */
+.fav-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 0px 40px 0px 100px;
+    margin: 0px auto;
+}
+
+.fav-item {
+    box-shadow: 1px 2px #a1a1a1;
+    margin: 0px 5px 30px 12px;
+    width: 28%;
+    padding: 10px;
+    background-color: #ffdb2e;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fav-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.fav-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fav-poster img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.fav-details-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 5px 5px 0px;
+}
+
+.fav-movie-name {
+    color: #000; /* Black text for movie names */
+    font-size: 25px;
+    font-family:serif;
+    font-weight: bold;
+    margin-bottom: 0rem;
+}
+
+.fav-movie-rating {
+    color:green;
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 0rem;
+}
+
+.fa-bookmark {
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-trash{
+    color: rgb(251, 53, 53);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-bookmark:hover, .fa-trash:hover {
+    color: red;
+}
+
+/* HOME Heading Styling */
+.home-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #D32F2F; /* Dark red for the HOME heading */
+    margin: 20px 0;
+}
+
+/* Sticky Header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-container h1 {
+        font-size: 1.25rem;
+    }
+
+    .header-link {
+        margin: 10px 0 0;
+    }
+
+    .search-box {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .movie-container {
+        width: 90%;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .movie-poster {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .movie-details {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .fav-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .fav-item {
+        width: 45%;
+        margin: 10px 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        padding: 10px;
+    }
+
+    .header-container h1 {
+        font-size: 1rem;
+    }
+
+    .circular-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .rectangular-logo {
+        width: 120px;
+        height: 40px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .movie-container {
+        width: 100%;
+    }
+
+    .fav-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .home-heading {
+        font-size: 1.5rem;
+    }
+}

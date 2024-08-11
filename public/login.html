@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE VAULT - SHAMPRAKASH </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)), url('./img/loginB.png') no-repeat center center fixed; 
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .brand-logo {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 280px;
+            height: auto;
+        }
+
+        .login-container {
+            display: flex;
+            flex-direction: row-reverse; /* Places the image container on the right side */
+            width: 800px;
+            height: 550px;
+            background-color: rgb(241, 237, 237); /* White background for the form */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Neat box shadow */
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-container {
+            flex: 1;
+            background: url('./img/vanakam.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        .form-container {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+            max-height: 100px;
+            border-radius: 30%;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #D32F2F; /* KFC red color */
+            text-align: center;
+            font-size: 1.8em;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px 50px 10px 50px;
+            margin: 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #D32F2F; /* Red background */
+            border: none;
+            border-radius: 5px;
+            color: #fff; /* White text */
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #fff; /* White background on hover */
+            color: #D32F2F; /* Red text on hover */
+            transform: translateY(-2px);
+            border: 2px solid #D32F2F; /* Red border on hover */
+        }
+
+        .form-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .form-links a {
+            color: #D32F2F; /* Red color for links */
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.9em;
+        }
+
+        .form-links a:hover {
+            color: #9A1F1F; /* Darker red on hover */
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            .login-container {
+                flex-direction: column;
+                width: 90%;
+                height: auto;
+            }
+
+            .image-container {
+                display: none; /* Hide image container on mobile devices */
+            }
+            
+            .form-container {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .brand-logo {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="./img/MVTXT.png" alt="Brand Logo" class="brand-logo"> <!-- New brand logo at the top -->
+    <div class="login-container">
+        <div class="image-container"></div>
+        <div class="form-container">
+            <div class="logo">
+                <img src="./img/MovieVault.png" alt="Company Logo"> <!-- Logo in the form -->
+            </div>
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+                <div class="form-links">
+                    <a href="#">Forgot Password?</a>
+                    <a href="register.html">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const response = await fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, password }),
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                alert('Login successful!');
+                window.location.href = 'landing.html';
+            } else {
+                alert('Login failed: ' + result.message);
+            }
+        });
+    </script>
+</body>
+</html>
