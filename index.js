@@ -25,6 +25,8 @@ mongoose.connect( connectionString , {
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname, './public/img')));
+
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './public/login.html'));
