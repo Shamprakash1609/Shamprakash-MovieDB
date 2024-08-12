@@ -24,12 +24,10 @@ mongoose.connect( connectionString , {
   .catch(err => console.log("Connection Error", err));
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(process.cwd(), './public')));
-app.use(express.static(path.join(process.cwd(), './public/img')));
-
+app.use(express.static(path.join(__dirname, './public')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(process.cwd(), './public/login.html'));
+    res.sendFile(path.join(__dirname, './public/login.html'));
 });
 
 app.post('/register', async (req, res) => {
