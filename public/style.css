@@ -303,9 +303,16 @@ body {
         margin: 10px 0 0;
     }
 
+    .circular-logo {
+        width: 90px;
+        height: 90px;
+        margin-left:200px ;
+        
+    }
+
     .search-box {
         width: 100%;
-        margin: 10px auto;
+        margin: 10px auto
     }
 
     .movie-container {
@@ -345,17 +352,15 @@ body {
     }
 
     .circular-logo {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
+        margin-left:150px ;
+        
     }
 
-    .rectangular-logo {
-        width: 120px;
-        height: 40px;
-    }
 
     .search-box {
-        width: 100%;
+        width: 90%;
     }
 
     .movie-container {
