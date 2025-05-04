@@ -50,16 +50,16 @@ Hosted on **Render**
 ![Login Page](./Movie-VaultDOCS/login.png) <!-- Replace with your screenshot -->
 
 ### 📝 Sign Up Page
-![Sign Up Page](./images/signup-page.png) <!-- Replace with your screenshot -->
+![Sign Up Page](./Movie-VaultDOCS/signup.png) <!-- Replace with your screenshot -->
 
 ### 🏠 Landing/Search Page
-![Landing Page](./images/landing-page.png) <!-- Replace with your screenshot -->
+![Landing Page](./Movie-VaultDOCS/home.png) <!-- Replace with your screenshot -->
 
 ### 🎥 Movie Details Page
-![Movie Details](./images/movie-details.png) <!-- Replace with your screenshot -->
+![Movie Details](./Movie-VaultDOCS/movie.png) <!-- Replace with your screenshot -->
 
 ### ⭐ Watchlist Page
-![Watchlist Page](./images/watchlist-page.png) <!-- Replace with your screenshot -->
+![Watchlist Page](./images/watchlist.png) <!-- Replace with your screenshot -->
 
 ---
 
