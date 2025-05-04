@@ -47,7 +47,7 @@ Hosted on **Render**
 > ⚠️ **Replace each image placeholder with your own screenshot later.**
 
 ### 🔑 Login Page
-![Login Page](./images/login-page.png) <!-- Replace with your screenshot -->
+![Login Page](./Movie-VaultDOCS/login.png) <!-- Replace with your screenshot -->
 
 ### 📝 Sign Up Page
 ![Sign Up Page](./images/signup-page.png) <!-- Replace with your screenshot -->
