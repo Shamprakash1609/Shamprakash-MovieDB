@@ -42,7 +42,7 @@ Hosted on **Render**
 
 ## 📷 Project Screenshots
 
-> ⚠️ **Replace each image placeholder with your own screenshot later.**
+
 
 ### 🔑 Login Page
 ![Login Page](./Movie-VaultDOCS/login.png) <!-- Replace with your screenshot -->
