@@ -2,12 +2,6 @@
 
 > A dynamic and user-friendly movie database web application.
 
-## 👤 About Me
-
-**Name:** Shamprakash R  
-**Roll No:** SEC22AM016  
-**Department:** AIML - 3rd Year  
-
 ---
 
 ## 🔍 Core Features
