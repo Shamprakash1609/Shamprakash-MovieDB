@@ -1,4 +1,4 @@
-# 🎬 Movie Vault - Shamprakash R
+<img width="1510" alt="watchlist" src="https://github.com/user-attachments/assets/cdd6f223-448d-428e-bf24-f2494a31ba15" /><img width="1510" alt="watchlist" src="https://github.com/user-attachments/assets/fc201727-1b7f-49b1-b72d-0a31d4e5ec5a" /># 🎬 Movie Vault - Shamprakash R
 
 > A dynamic and user-friendly movie database web application.
 
@@ -59,7 +59,8 @@ Hosted on **Render**
 ![Movie Details](./Movie-VaultDOCS/movie.png) <!-- Replace with your screenshot -->
 
 ### ⭐ Watchlist Page
-![Watchlist Page](./images/watchlist.png) <!-- Replace with your screenshot -->
+![Watchlist Page](./Movie-VaultDOCS/watchlist.png)
+.png) <!-- Replace with your screenshot -->
 
 ---
 
