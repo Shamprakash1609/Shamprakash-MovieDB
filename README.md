@@ -58,7 +58,7 @@ Hosted on **Render**
 
 ### ⭐ Watchlist Page
 ![Watchlist Page](./Movie-VaultDOCS/watchlist.png)
-.png) <!-- Replace with your screenshot -->
+ <!-- Replace with your screenshot -->
 
 ---
 
